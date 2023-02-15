@@ -1,3 +1,7 @@
+void testeDartAula01() {
+  escolherMeioTransporteEnumSwitch(Transporte.patins);
+}
+
 enum Transporte {
   carro,
   bicicleta,
