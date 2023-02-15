@@ -1,4 +1,7 @@
 void testeDartAula02() {
+  List<double> listaNumeros = [1.9, 1.5, 0.99, 99, 55, 30];
+  print(listaNumeros);
+
   // Set<String> registrosVisitados = <String>{};
   // registrosVisitados = registrarDestinos("São Paulo", registrosVisitados);
   // registrosVisitados = registrarDestinos("Rio de Janeiro", registrosVisitados);
