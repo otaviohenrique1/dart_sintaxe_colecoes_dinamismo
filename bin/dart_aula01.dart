@@ -1,14 +1,7 @@
+import 'transporte.dart';
+
 void testeDartAula01() {
   escolherMeioTransporteEnumSwitch(Transporte.patins);
-}
-
-enum Transporte {
-  carro,
-  bicicleta,
-  andando,
-  skate,
-  patins,
-  trem,
 }
 
 void escolherMeioTransporteEnumSwitch(Transporte locomocao) {
