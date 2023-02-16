@@ -1,13 +1,15 @@
+// import 'transporte.dart';
+
 void testeDartAula02() {
   List<double> listaNumeros = [1.9, 1.5, 0.99, 99, 55, 30];
   print(listaNumeros);
 
-  // Set<String> registrosVisitados = <String>{};
-  // registrosVisitados = registrarDestinos("São Paulo", registrosVisitados);
+  Set<String> registrosVisitados = <String>{};
+  registrosVisitados = registrarDestinos("São Paulo", registrosVisitados);
   // registrosVisitados = registrarDestinos("Rio de Janeiro", registrosVisitados);
   // registrosVisitados = registrarDestinos("Recife", registrosVisitados);
   // registrosVisitados = registrarDestinos("São Paulo", registrosVisitados);
-  // print(registrosVisitados);
+  print(registrosVisitados);
   // print(registrosVisitados.first);
   // print(registrosVisitados.last);
   // print(registrosVisitados.isEmpty);

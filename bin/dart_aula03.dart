@@ -1,4 +1,4 @@
-import 'viagem.dart';
+// import 'viagem.dart';
 
 void testeDartAula03() {
   /* var => tipo é atribuido na inicialização da variavel */
@@ -15,7 +15,7 @@ void testeDartAula03() {
   print(numero2.runtimeType);
 
   /* static */
-  Viagem viagemHoje = Viagem();
-  Viagem.codigoTrabalho;
-  viagemHoje.dinheiro;
+  // Viagem viagemHoje = Viagem();
+  // Viagem.codigoTrabalho;
+  // viagemHoje.dinheiro;
 }

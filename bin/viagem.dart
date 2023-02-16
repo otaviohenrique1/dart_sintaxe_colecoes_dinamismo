@@ -5,6 +5,10 @@ class Viagem {
   double dinheiro = 0;
   Transporte locomocao;
   Set<String> registrosVisitados = <String>{};
+  Map<String, dynamic> registrarPrecos = {};
+
+  /* '_'no inicio do nome da variavel => equivale ao 'private' em outras linguagens */
+  int _totalLocaisVisitados = 0; /* Variavel privada */
 
   Viagem({required this.locomocao});
 
@@ -37,23 +41,20 @@ class Viagem {
     }
   }
 
-  // void escolherMeioTransporteEnum(Transporte locomocao) {
-  //   if (locomocao == Transporte.carro) {
-  //     print("Carro");
-  //   } else if (locomocao == Transporte.bicicleta) {
-  //     print("Bicicleta");
-  //   } else {
-  //     print("Vou para aventura!");
-  //   }
-  // }
+  void visitar(String localVisita) {
+    registrosVisitados.add(localVisita);
+    _totalLocaisVisitados += 1;
+  }
 
-  // void escolherMeioTransporte(int locomocao) {
-  //   if (locomocao == 0) {
-  //     print("Carro");
-  //   } else if (locomocao == 1) {
-  //     print("Bicicleta");
-  //   } else {
-  //     print("Vou para aventura!");
-  //   }
-  // }
+  void registrarPrecoVisita(String local, dynamic preco) {
+    registrarPrecos[local] = preco;
+  }
+
+  int get consultarTotalLocaisVisitados {
+    return _totalLocaisVisitados;
+  }
+
+  set alterarLocaisVisitados(int novaQuantidade) {
+    _totalLocaisVisitados = novaQuantidade;
+  }
 }
