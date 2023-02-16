@@ -55,6 +55,10 @@ class Viagem {
   }
 
   set alterarLocaisVisitados(int novaQuantidade) {
-    _totalLocaisVisitados = novaQuantidade;
+    if (novaQuantidade < 10) {
+      _totalLocaisVisitados = novaQuantidade;
+    } else {
+      print("Não é possivel");
+    }
   }
 }
